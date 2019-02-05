@@ -1,5 +1,3 @@
-pool:
-  vmImage: 'ubuntu-16.04' # other options: 'macOS-10.13', 'vs2017-win2016'
 
 # Sample ASP.NET Core application for Azure Pipelines docs
 
