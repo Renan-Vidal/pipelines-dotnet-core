@@ -23,3 +23,9 @@ steps:
 
 - script: dotnet restore
 - script: dotnet build # Include additional options such as --configuration to meet your need
+
+- task: DotNetCoreCLI@2
+  inputs:
+    command: test
+    projects: '**/*Tests/*.csproj'
+    arguments: '--configuration $(buildConfiguration)'
